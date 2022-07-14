@@ -1,6 +1,6 @@
 import { symbolMap } from "./config";
 
-export function romanToInt(s: string): number {
+const romanToInt = (s: string): number => {
     if(!s) return 0
     if(s.length === 1) return symbolMap[s]
 
@@ -9,3 +9,5 @@ export function romanToInt(s: string): number {
     }
     return symbolMap[s[0]] + romanToInt(s.substring(1));
 }
+
+export default romanToInt

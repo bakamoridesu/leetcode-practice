@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 5% 30%;
 }
 
 .App-logo {
@@ -35,4 +36,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.test {
+  height: 100px;
+
+  border-radius: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.passed {
+  background: #82e870;
+}
+
+.failed {
+  background: #e56c6c;
 }

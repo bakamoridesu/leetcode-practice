@@ -11,3 +11,5 @@ export const symbolMap: Map = {
     D: 500,
     M: 1000,
 }
+
+export const name = 'roman-to-int'
