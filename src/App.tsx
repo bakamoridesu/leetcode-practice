@@ -10,7 +10,7 @@ function App() {
     return (
         <div className="App">
             <h1>Current challenge: {name}</h1>
-            <Tests currentChallenge={currentChallenge} testCases={testCases} />
+            <Tests currentChallenge={currentChallenge} testCases={testCases}/>
         </div>
     );
 }
