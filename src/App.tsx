@@ -20,7 +20,7 @@ const Tests = ({testCases, currentChallenge}) => {
     return (
         <>
             {testCases.map((test: any, index: any) => {
-                const testResult = currentChallenge(test.test)
+                const testResult = currentChallenge(...test.test)
                 const isCorrect = testResult === test.answer
                 return (
                     <div key={index} className={cn('test', isCorrect ? 'passed' : 'failed')}>

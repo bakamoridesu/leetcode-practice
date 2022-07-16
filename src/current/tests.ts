@@ -1,22 +1,15 @@
 export const testCases = [
     {
-        test: 'X',
-        answer: 10
+        test: ['a', 'b'],
+        answer: false
     },
-    {
-        test: 'III',
-        answer: 3
+        {
+        test: ['aa', 'ab'],
+        answer: false
     },
-    {
-        test: 'LVIII',
-        answer: 58,
+        {
+        test: ['aa', 'aab'],
+        answer: true
     },
-    {
-        test: 'MCMXCIV',
-        answer: 1994
-    },
-    {
-        test: 'XXL',
-        answer: 100000
-    }
+
 ]

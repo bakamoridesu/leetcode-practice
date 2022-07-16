@@ -1,13 +1,6 @@
-import { symbolMap } from "./config";
+function canConstruct(ransomNote: string, magazine: string): boolean {
 
-const romanToInt = (s: string): number => {
-    if(!s) return 0
-    if(s.length === 1) return symbolMap[s]
-
-    if (symbolMap[s[0]] < symbolMap[s[1]]) {
-        return symbolMap[s[1]] - symbolMap[s[0]] + romanToInt(s.substring(2))
-    }
-    return symbolMap[s[0]] + romanToInt(s.substring(1));
+    return false
 }
 
-export default romanToInt
+export default canConstruct
