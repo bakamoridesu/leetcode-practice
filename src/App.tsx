@@ -20,6 +20,7 @@ const Tests = ({testCases, currentChallenge}) => {
     return (
         <>
             {testCases.map((test: any, index: any) => {
+                // change this line based on test case structure
                 const testResult = currentChallenge(...test.test)
                 const isCorrect = testResult === test.answer
                 return (
