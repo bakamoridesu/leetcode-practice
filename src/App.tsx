@@ -20,9 +20,10 @@ const Tests = ({testCases, currentChallenge}) => {
     return (
         <>
             {testCases.map((test: any, index: any) => {
-                // change this line based on test case structure
-                const testResult = currentChallenge(test.test)
-                const isCorrect = testResult === test.answer
+                // change these 2 lines based on test case structure
+                const testResult = currentChallenge(...test.test)
+                const isCorrect = testResult.join('') === test.answer.join('')
+
                 return (
                     <div key={index} className={cn('test', isCorrect ? 'passed' : 'failed')}>
                         {`Test: ${test.test.toString()}, result: ${testResult}, correctAnswer: ${test.answer}`}
